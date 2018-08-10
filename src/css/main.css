@@ -1,0 +1,202 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all, 0.5s, ease;
+  -khtml-transition: all, 0.5s, ease;
+  -moz-transition: all, 0.5s, ease;
+  -ms-transition: all, 0.5s, ease;
+  -o-transition: all, 0.5s, ease;
+  transition: all, 0.5s, ease; }
+
+body {
+  background: #f2f2f2; }
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  -webkit-animation: fadein 2s;
+  -khtml-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+  -webkit-transition: all, 0.5s, ease;
+  -khtml-transition: all, 0.5s, ease;
+  -moz-transition: all, 0.5s, ease;
+  -ms-transition: all, 0.5s, ease;
+  -o-transition: all, 0.5s, ease;
+  transition: all, 0.5s, ease;
+  font-style: bold;
+  font-size: 12vh; }
+
+h1:hover {
+  filter: alpha(opacity=40);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  -webkit-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  -moz-opacity: 0.4;
+  -ms-opacity: 0.4;
+  -o-opacity: 0.4;
+  opacity: 0.4; }
+
+h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  -webkit-animation: fadein 2s;
+  -khtml-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+  -webkit-transition: all, 0.5s, ease;
+  -khtml-transition: all, 0.5s, ease;
+  -moz-transition: all, 0.5s, ease;
+  -ms-transition: all, 0.5s, ease;
+  -o-transition: all, 0.5s, ease;
+  transition: all, 0.5s, ease;
+  font-size: 3vh;
+  top: 65%; }
+
+h4:hover {
+  filter: alpha(opacity=40);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  -webkit-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  -moz-opacity: 0.4;
+  -ms-opacity: 0.4;
+  -o-opacity: 0.4;
+  opacity: 0.4; }
+
+@keyframes fadein {
+  from {
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-opacity: 0;
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0; }
+  to {
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-opacity: 1;
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1; } }
+
+#nav_container {
+  position: fixed;
+  height: 100%;
+  width: 180px; }
+
+#mySidenav {
+  transition: 0.3s;
+  height: 100%;
+  width: 120px;
+  padding-right: 1%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e6e6e6;
+  -webkit-box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.75);
+  z-index: 2;
+  position: fixed;
+  color: black;
+  -webkit-transition: 0.5s, ease;
+  -khtml-transition: 0.5s, ease;
+  -moz-transition: 0.5s, ease;
+  -ms-transition: 0.5s, ease;
+  -o-transition: 0.5s, ease;
+  transition: 0.5s, ease; }
+
+#mySidenav a {
+  position: relative;
+  left: 0px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0; }
+
+.index {
+  top: 20px;
+  float: left;
+  width: 5px;
+  margin-top: 8px;
+  margin-left: -5px;
+  background-color: #8c8c8c; }
+
+.index:hover {
+  margin-left: 0px;
+  background-color: #808080; }
+
+#blog {
+  top: 80px;
+  min-width: 500px;
+  background-color: #8c8c8c; }
+
+#blog:hover {
+  background-color: #808080; }
+
+#projects {
+  top: 140px;
+  min-width: 500px;
+  background-color: #f44336; }
+
+#contact {
+  top: 200px;
+  min-width: 500px;
+  background-color: #333; }
+
+#container {
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
+  min-width: 600px;
+  max-height: 800px;
+  max-height: 800px; }
+
+.chart_wrapper {
+  width: 50%;
+  height: 50%;
+  min-height: 100px;
+  min-width: 600px;
+  max-height: 800px;
+  max-height: 800px;
+  padding-left: 125px;
+  display: block;
+  margin: 0 auto; }
+
+.charts {
+  z-index: -1;
+  position: relative; }
