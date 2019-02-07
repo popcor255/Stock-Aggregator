@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <title>Project</title>
-        <meta http-equiv="x-uq-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link media="all" type="text/css" rel="stylesheet" href="/css/main.css">
-        <script src="./js/init.js"></script>
-    </head>
-    <body>
-        
-        <div id="nav_container">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:scrollTo('chart_0')" class='index' id="1">Google</a>
-                <a href="javascript:scrollTo('chart_1')" class='index' id="2">Tesla</a>
-                <a href="javascript:scrollTo('chart_2')" class='index' id="3">Facebook</a>
-                <a href="javascript:scrollTo('chart_3')" class='index' id="4">J&J</a>
-                <a href="javascript:scrollTo('chart_4')" class='index' id="5">S&P500</a>
-                <a href="javascript:scrollTo('chart_5')" class='index' id="6">Amazon</a>
-                <a href="javascript:scrollTo('chart_6')" class='index' id="7">Apple</a>
-                <a href="javascript:scrollTo('chart_7')" class='index' id="8">Old Navy</a>
-            </div>
-        </div>
 
+<head>
+  <title>Project</title>
+  <meta http-equiv="x-uq-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link media="all" type="text/css" rel="stylesheet" href="/css/main.css" />
+  <script src="./js/init.js"></script>
+</head>
 
-        <div id="container">
-        </div>
+<body>
+  <div id="nav_container">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:loadStock(0)" class="index" id="1">Google</a>
+      <a href="javascript:loadStock(1)" class="index" id="2">Tesla</a>
+      <a href="javascript:loadStock(2)" class="index" id="3">Facebook</a>
+      <a href="javascript:loadStock(3)" class="index" id="4">J&J</a>
+      <a href="javascript:loadStock(4)" class="index" id="5">S&P500</a>
+    </div>
+  </div>
 
-    </body>
+  <div id="container"></div>
+</body>
+
 </html>
