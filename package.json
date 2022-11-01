@@ -13,7 +13,7 @@
     "browser-sync": "^2.24.5",
     "chart.js": "^2.7.2",
     "chartjs": "^0.3.24",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-connect": "^5.5.0",
     "gulp-css": "^0.1.0",
